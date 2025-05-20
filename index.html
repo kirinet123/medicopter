@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пчелиный Улей</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #videoContainer {
+            margin: 20px auto;
+            width: 640px;
+            height: 480px;
+            border: 2px solid #000;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <h1>Пчелиный Улей</h1>
+    <div id="videoContainer">
+        <video id="webcam" autoplay playsinline></video>
+    </div>
+    <div>
+        <button id="collectHoney">Слить Мёд</button>
+        <button id="collectWax">Собрать Воск</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
